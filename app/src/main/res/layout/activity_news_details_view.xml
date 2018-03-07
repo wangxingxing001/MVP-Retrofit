@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_news_details"
+    style="@style/both_match_style"
+    android:background="@color/white"
+    tools:context="com.lezhi.wshi.module.ui.activitys.NewsDetailsActivity">
+
+
+    <ScrollView
+        style="@style/both_match_style">
+        <include layout="@layout/activity_news_details_view_item"/>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        style="@style/both_hmatch_style">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/alpha_10_black"/>
+        <LinearLayout
+        android:background="@color/alpha_55_white"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/page_fanhui_normal"/>
+        <ImageView
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/page_xiepinglun_normal"/>
+        <ImageView
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/page_pinglun_normal"/>
+        <ImageView
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/page_zan_normal"/>
+        <ImageView
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/page_shoucang_normal"/>
+        <ImageView
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/page_fengxiangi_normal"/>
+    </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

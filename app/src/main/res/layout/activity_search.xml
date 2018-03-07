@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search"
+    style="@style/both_match_style"
+    tools:context="com.lezhi.wshi.module.ui.activitys.SearchActivity">
+
+    <com.lezhi.wshi.module.ui.view.SearchView
+        android:id="@+id/search_view"
+        style="@style/both_match_style">
+    </com.lezhi.wshi.module.ui.view.SearchView>
+</RelativeLayout>

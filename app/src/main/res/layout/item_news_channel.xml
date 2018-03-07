@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    style="@style/both_hmatch_style"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:id="@+id/news_channel_iv"
+        android:layout_gravity="right"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/news_channel_tv"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_item_news_channel"
+        android:gravity="center"
+        android:textColor="@color/alpha_55_black"
+        android:textSize="12dp"
+        tools:text="头条"/>
+</FrameLayout>

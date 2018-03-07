@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search"
+    style="@style/both_match_style"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingTop="20dp"
+    android:background="@color/colorindicator_text"
+    android:orientation="vertical"
+    tools:context="com.lezhi.wshi.module.ui.activitys.SearchActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/alpha_35_white"
+        android:id="@+id/search_titlebar"
+        style="@style/both_hmatch_style">
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            style="@style/both_hmatch_style"
+            android:background="@color/alpha_10_black">
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_launcher" />
+            <EditText
+                android:id="@+id/search_key"
+                android:padding="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                style="@style/both_hmatch_style"
+                android:hint="想买点什么"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:textSize="14dp"/>
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/search_iv_del"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_launcher"
+            />
+    </LinearLayout>
+        <!-- 首title -->
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/search_titlebar_title"
+        android:orientation="horizontal"
+        android:layout_below="@+id/search_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索历史"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dp_10"/>
+
+        <TextView
+            android:id="@+id/search_tv_del_db"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清空历史"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_hot_history"
+        android:layout_below="@+id/search_titlebar_title"
+        style="@style/both_hmatch_style" />
+    <TextView
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="热门搜索"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_hot_rv"
+        android:layout_below="@+id/search_titlebar_title"
+        style="@style/both_hmatch_style" />
+</LinearLayout>

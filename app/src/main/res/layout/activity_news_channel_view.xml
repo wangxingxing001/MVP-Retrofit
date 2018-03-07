@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_news_channel"
+    style="@style/both_match_style"
+    android:orientation="vertical"
+    android:background="@color/blue_green"
+    tools:context="com.lezhi.wshi.module.ui.activitys.NewsChannelActivity">
+
+    <include layout="@layout/main_title"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        style="@style/both_wrap_style">`
+        <TextView
+            style="@style/both_wrap_style"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="正在使用"
+            android:textSize="12dp" />
+        <TextView
+            style="@style/both_wrap_style"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:text="北京市"
+            android:textColor="@color/colorCyanPrimary"/>
+        <TextView
+            style="@style/both_wrap_style"
+            android:text="使用的是  全国A卷"
+            />
+    </LinearLayout>
+
+    <TextView
+        style="@style/both_hmatch_style"
+        android:text="我的频道" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/news_channel_mine_rv"
+        style="@style/both_hmatch_style"
+        android:overScrollMode="never" />
+
+    <TextView
+        style="@style/both_hmatch_style"
+        android:text="学科" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/news_channel_more_rv"
+        style="@style/both_hmatch_style"
+        android:overScrollMode="never"/>
+
+    <TextView
+        style="@style/both_hmatch_style"
+        android:text="热门" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/news_channel_hot_rv"
+        style="@style/both_hmatch_style"
+        android:overScrollMode="never"/>
+</LinearLayout>

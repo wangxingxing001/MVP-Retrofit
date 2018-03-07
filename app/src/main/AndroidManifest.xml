@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lezhi.wshi">
+
+    <!-- 权限操作 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".module.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".module.ui.activitys.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".module.ui.activitys.WelcomeActivity" />
+        <activity
+            android:name=".module.ui.activitys.LoginActivity"
+            android:theme="@style/CustomTransparent" />
+        <activity
+            android:name=".module.ui.activitys.RegisterActivity"
+            android:theme="@style/CustomTransparent" />
+        <activity
+            android:name=".module.ui.activitys.NewsChannelActivity"
+            android:theme="@style/CustomTransparent" />
+        <activity
+            android:name=".module.ui.activitys.SearchActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".module.ui.activitys.NewsDetailsActivity"
+            android:theme="@style/CustomTransparent"/>
+    </application>
+
+</manifest>

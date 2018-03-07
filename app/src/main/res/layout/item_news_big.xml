@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/news_item_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        style="@style/both_hmatch_style">
+        <ImageView
+            android:id="@+id/news_big_picture"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        style="@style/both_match_style">
+        <LinearLayout
+            android:layout_weight="1"
+            style="@style/both_match_style">
+            <TextView
+                android:id="@+id/news_big_title"
+                style="@style/both_hmatch_style"
+                android:textColor="@color/alpha_85_black"
+                android:text="我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            style="@style/both_hmatch_style">
+            <TextView
+                android:id="@+id/news_big_date"
+                style="@style/both_wrap_style"
+                android:textSize="12dp"
+                android:text="4"/>
+            <TextView
+                android:id="@+id/news_big_laiyuan"
+                android:layout_marginLeft="20dp"
+                android:textSize="12dp"
+                style="@style/both_wrap_style"
+                android:text="新高考改革"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

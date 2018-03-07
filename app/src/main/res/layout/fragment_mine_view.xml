@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorGray"
+    android:id="@+id/activity_main_view_relative"
+
+    style="@style/both_match_style">
+
+    <!-- 我的界面 头像部分-->
+    <RelativeLayout
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/fragment_mine_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/fragment_mine_photo"
+            android:orientation="horizontal"
+            style="@style/both_hmatch_style">
+                <!-- 1 -->
+                <TextView
+                    android:id="@+id/fragment_mine_login"
+                    style="@style/both_wrap_style"
+                    android:text="登录"
+                    android:padding="@dimen/dp_10"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/white"/>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/fragment_mine_integral"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/ic_launcher"/>
+                <TextView
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="累计积分:"/>
+                <TextView
+                    android:id="@+id/fragment_mine_tv_integral"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="160"/>
+            </LinearLayout>
+                <!-- 空间 控件,可设置间距，空间距-->
+                <Space
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+                <!-- 2 -->
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/fragment_mine_sign"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/ic_launcher"/>
+                    <TextView
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="签到送积分"/>
+            </LinearLayout>
+
+                <TextView
+                        android:id="@+id/fragment_mine_register"
+                        android:padding="@dimen/dp_10"
+                        style="@style/both_wrap_style"
+                        android:text="注册"
+                        android:textSize="@dimen/sp_16"
+                        android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- 我的界面 子菜单-->
+    <LinearLayout
+        android:id="@+id/fragment_mine_collection"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/colorMebg"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收藏"
+            android:textSize="@dimen/sp_14"/>
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_launcher"/>
+
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"/>
+    <LinearLayout
+        android:id="@+id/fragment_mine_notice"
+        android:background="@color/colorMebg"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通知"
+            android:textSize="@dimen/sp_14"/>
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_launcher"/>
+
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"/>
+    <LinearLayout
+        android:id="@+id/fragment_mine_comment"
+        android:background="@color/colorMebg"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论"
+            android:textSize="@dimen/sp_14"/>
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_launcher"/>
+
+    </LinearLayout>
+    <!-- 我的界面 子菜单-->
+    <LinearLayout
+        android:id="@+id/fragment_mine_user"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/colorMebg"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号"
+            android:textSize="@dimen/sp_14"/>
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_launcher"/>
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"/>
+    <LinearLayout
+        android:id="@+id/fragment_mine_settings"
+        android:background="@color/colorMebg"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textSize="@dimen/sp_14"/>
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_launcher"/>
+    </LinearLayout>
+    <!-- 我的界面 子菜单-->
+    <LinearLayout
+        android:id="@+id/fragment_mine_feedback"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/colorMebg"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="意见反馈"
+            android:textSize="@dimen/sp_14"/>
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_launcher"/>
+    </LinearLayout>
+</LinearLayout>

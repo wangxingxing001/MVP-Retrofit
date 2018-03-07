@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_news_channel"
+    style="@style/both_match_style"
+    android:orientation="vertical"
+    android:background="@color/blue_green"
+    tools:context="com.lezhi.wshi.module.ui.activitys.NewsChannelActivity">
+
+   <com.lezhi.wshi.module.ui.view.NewsChannelView
+       style="@style/both_match_style">
+
+   </com.lezhi.wshi.module.ui.view.NewsChannelView>
+</LinearLayout>

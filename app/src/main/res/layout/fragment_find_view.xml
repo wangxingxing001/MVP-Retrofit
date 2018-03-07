@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    style="@style/both_match_style"
+    tools:context=".module.ui.activitys.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        style="@style/both_match_style">
+
+        <include layout="@layout/base_indicator"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/colorMebg"
+            style="@style/both_match_style">
+            <LinearLayout
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal"
+                style="@style/both_hmatch_style">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="130dp" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    style="@style/both_match_style">
+                        <TextView
+                            style="@style/both_hmatch_style"
+                            android:text="title"/>
+                        <TextView
+                            android:layout_marginTop="40dp"
+                            android:layout_weight="1"
+                            style="@style/both_hmatch_style"
+                            android:text="内容"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="@dimen/dp_10"
+                style="@style/both_hmatch_style">
+                <TextView
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    style="@style/both_hmatch_style"
+                    android:text="我要投稿"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorCyanPrimary"/>
+                <TextView
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    style="@style/both_hmatch_style"
+                    android:text="我要投稿"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorCyanPrimary"/>
+                <TextView
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    style="@style/both_hmatch_style"
+                    android:text="我要投稿"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorCyanPrimary"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/colorBluePrimaryCenter"
+            style="@style/both_hmatch_style">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                style="@style/both_match_style"
+                android:text="公益教科研"
+                android:textSize="18dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_40"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="中国教师发展基金会资助科研公益项目"/>
+
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="@dimen/dp_40"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="我要申报 >>"
+                android:textSize="18dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/colorBlueGreyPrimaryDark"
+            style="@style/both_hmatch_style">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                style="@style/both_hmatch_style">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"/>
+                <TextView
+                    android:gravity="center"
+                    style="@style/both_hmatch_style"
+                    android:text="26省联考"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="@dimen/dp_40"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="天利38套、教学考试、新东方优能" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="非官方全国统一考试"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="我要参加 >>"
+                android:textSize="18dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

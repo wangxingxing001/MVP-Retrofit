@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_news_details"
+    style="@style/both_match_style"
+    tools:context="com.lezhi.wshi.module.ui.activitys.NewsDetailsActivity">
+    <com.lezhi.wshi.module.ui.view.NewsDetailsView
+        style="@style/both_match_style">
+
+    </com.lezhi.wshi.module.ui.view.NewsDetailsView>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_news_details"
+    style="@style/both_match_style"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    tools:context="com.lezhi.wshi.module.ui.activitys.NewsDetailsActivity">
+
+    <TextView
+        style="@style/both_hmatch_style"
+        android:text="管理后的妙招"
+        android:textColor="@color/alpha_60_black"
+        android:textSize="16dp"/>
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        style="@style/both_hmatch_style"
+        android:orientation="horizontal">
+            <TextView
+                style="@style/both_wrap_style"
+                android:text="作者："
+                android:textColor="@color/alpha_45_black"/>
+            <Space
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                style="@style/both_wrap_style"
+                android:text="教学经验  2017 - 5 - 8"
+                android:textColor="@color/alpha_45_black"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/alpha_10_black"/>
+    <WebView
+        style="@style/both_match_style"/>
+</LinearLayout>

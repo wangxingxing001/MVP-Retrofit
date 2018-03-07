@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview_view_techer"
+    style="@style/both_match_style"
+    tools:context=".module.ui.activitys.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        style="@style/both_match_style">
+
+        <RelativeLayout
+            android:background="@color/colorWrite"
+            android:paddingTop="25dp"
+            android:id="@+id/relative_tile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="7dp"
+                android:id="@+id/indicator_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/nav_search_normal"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:layout_marginBottom="8dp"
+                android:id="@+id/indicator_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="title"
+                android:textSize="16dp"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tacher_rv"
+            style="@style/both_match_style"/>
+    </LinearLayout>
+
+</ScrollView>

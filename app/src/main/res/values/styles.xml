@@ -1,0 +1,102 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:windowAnimationStyle">@style/AnimationActivity</item>-->
+    </style>
+
+    <!--设置继承appcompat的activity透明主题-->
+    <style name="CustomTransparent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+
+    <style name="AnimationActivity" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/base_slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/base_slide_right_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/base_slide_right_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/base_slide_right_out</item>
+    </style>
+
+    <!--设置继承appcompat的activity透明主题-->
+    <style name="CustomTransparent_left" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity_left</item>
+    </style>
+
+    <style name="AnimationActivity_left" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/base_slide_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/base_slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/base_slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/base_slide_left_out</item>
+    </style>
+
+    <!--设置继承appcompat的activity透明主题-->
+    <style name="tab_rb_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:textColor">@color/tab_selector</item>
+    </style>
+
+    <style name="both_wrap_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="both_match_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="both_hmatch_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="BannerDefaultStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">180dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <!-- 自定义属性在styles.xml中不需要命名空间,直接用属性名就可以了 -->
+        <!-- 开启自动轮播 -->
+        <item name="banner_pointAutoPlayAble">true</item>
+        <!-- 自动轮播的时间间隔 -->
+        <item name="banner_pointAutoPlayInterval">5000</item>
+        <!-- 指示点容器背景 -->
+        <item name="banner_pointContainerBackground">#44aaaaaa</item>
+        <!-- 指示点背景 -->
+        <item name="banner_pointDrawable">@drawable/bga_banner_selector_point_hollow</item>
+        <!-- 指示点容器左右内间距 -->
+        <item name="banner_pointContainerLeftRightPadding">10dp</item>
+        <!-- 指示点上下外间距 -->
+        <item name="banner_pointTopBottomMargin">6dp</item>
+        <!-- 指示点左右外间距 -->
+        <item name="banner_pointLeftRightMargin">3dp</item>
+        <!-- 指示器的位置 -->
+        <item name="banner_indicatorGravity">bottom|center_horizontal</item>
+        <!-- 页码切换过程的时间长度 -->
+        <item name="banner_pageChangeDuration">1000</item>
+        <!-- 提示文案的文字大小 -->
+        <item name="banner_tipTextSize">10sp</item>
+        <!-- 提示文案的文字颜色 -->
+        <item name="banner_tipTextColor">@android:color/white</item>
+        <!-- 加载网络数据时覆盖在BGABanner最上层的占位图 -->
+        <item name="banner_placeholderDrawable">@drawable/holder</item>
+    </style>
+
+</resources>
